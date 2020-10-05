@@ -8,7 +8,6 @@
     <meta name="author" content="Asaf Soreq">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
 
     <title>A. Soreq kinematics explained.</title>
 </head>
@@ -16,18 +15,77 @@
 <body>
     <script async src="javaScript.js"></script>
 
+    <canvas id="mainCanvas"></canvas>
+
+    <div id="transitionRect"></div>
+
+    <!-- the navbar is used to navigate between the different slides -->
     <ul id="navbar">
-        <li><div class="tooltip" title="Introduction"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="Table Of Contents"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="Units"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="The 4 Basic Variables"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="How The Basic Variables Are Related"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="2d Kinematics"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="Constants"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="Forces"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="Newton's 3 laws"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="Summary"><button class="navbarButton"></button></div></li>
-        <li><div class="tooltip" title="Glossary"><button class="navbarButton"></button></div></li>
+        <li>
+            <div class="tooltip" title="Introduction">
+                <button class="navbarButton" onclick="setSlide(1)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="Table Of Contents">
+                <button class="navbarButton" onclick="setSlide(2)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="Units">
+                <button class="navbarButton" onclick="setSlide(3)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="The 4 Basic Variables">
+                <button class="navbarButton" onclick="setSlide(4)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="How The Basic Variables Are Related">
+                <button class="navbarButton" onclick="setSlide(5)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="2d Kinematics">
+                <button class="navbarButton" onclick="setSlide(6)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="Constants">
+                <button class="navbarButton" onclick="setSlide(7)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="Forces">
+                <button class="navbarButton" onclick="setSlide(8)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="Newton's 3 laws">
+                <button class="navbarButton" onclick="setSlide(9)"></button>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip" title="Summary">
+                <button class="navbarButton" onclick="setSlide(10)"></button>
+            </div>
+        </li>
+        
+        <li>
+            <div class="tooltip" title="Glossary">
+                <button class="navbarButton" onclick="setSlide(11)"></button>
+            </div>
+        </li>
     </ul>
 </body>
 </html>

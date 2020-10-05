@@ -1,5 +1,22 @@
 body {
     background-color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mainCanvas {
+  display: block; /* turn the element into a block so it can be centered */
+  margin: auto; /* center the element */
+  width: 40%;
+  height: 540px;
+}
+
+#transitionRect {
+  display: block; /* turn the element into a block so it can be centered */
+  margin: auto; /* center the element */
+  height: 30px;
+  width: 40%;
+  background-image: linear-gradient(#333, #333);
 }
 
 #navbar {
@@ -12,8 +29,8 @@ body {
     position: relative;
     margin: auto;
     /* background-color: #ff0;  for debugging */
-    width: 35%; /* set the width of the navbar */
-    top: 563px;
+    width: 40%; /* set the width of the navbar */
+    top: 5px;
 }
 
 ul#navbar li {
@@ -24,8 +41,8 @@ ul#navbar li {
 
 .navbarButton {
     border-radius: 50%; /* round out the edges of the buttons */
-    width: 32px; /* set the width of the navbar buttons */
-    height: 32px; /* set the height of the navbar buttons */
+    width: 34px; /* set the width of the navbar buttons */
+    height: 34px; /* set the height of the navbar buttons */
     border: 2px solid #fff;
     background-color: #333;
 }
